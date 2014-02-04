@@ -1,0 +1,290 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+}
+
+a {
+	text-decoration: none;
+}
+hr{
+	border:1px solid ;
+	color:#f0f0f0;
+}
+a img {
+	border: 0;
+}
+
+p{
+	margin: 0 0 1em;
+}
+#header{
+	height:20px;
+}
+#header ul{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#header ul li:first-child{
+	padding-top:4px;
+}
+#header ul li{
+	display:inline-block;
+	margin-right:50px;
+	height:20px;
+	float:left;
+}
+#mainBg {
+	margin-top: -3%;
+	//background-image: url(../img/paris.jpg);
+	height:110%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 400%;
+	font-weight: bold;
+	color:#2932FF;
+	margin-top:0px;
+	margin-bottom:10px
+}
+
+#mainDiv {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#seachDiv input {
+	height: 28px;
+	font: 16px arial;
+}
+#seachTxt{
+	width: 490px;
+}
+
+#checkDiv {
+	margin-left: 32%;
+	margin-top: 10px;
+}
+#checkDiv .radioTheme {
+	margin-right: 40px;
+	float: left;
+}
+#imgDiv {
+	clear: both;
+}
+#listMenu {
+	clear:both;
+	float:left;
+	position:absolute;
+	z-index:999;
+	margin-top:2%;
+	margin-left:8%;
+}
+#rightPart{
+	margin-top:2%;
+	margin-left:23%;
+	float:left;
+	height:600px;
+}
+#navigatBar{
+	position:relative;
+	margin-left:65px;
+	margin-top:-30px;
+}
+#navigatList li:first-child{
+	border-left:1px solid ;
+}
+#navigatList li{
+	
+	display:inline-block;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:bold;
+	font-size:150%;
+	border-right:1px solid ;
+	border-top:1px solid ;
+	border-bottom:1px solid ;
+}
+#searchSite{
+	width:145px;
+	margin-left:40px;
+}
+ 
+#siteDisplay{
+	position:absolute;
+	margin-top:20px;
+	margin-left:60px;
+}
+.recomondSite {
+	width:690px;  
+	height:160px;  
+	margin:0 5px 5px 0;
+	position:relative;
+	margin-left:50px;
+	margin-top:20px; 
+}
+.siteContent{  
+	position:relative;  
+	width:610px;  
+	height:160px;  
+	display:inline-block;  
+	overflow:hidden;  
+	float:left;  
+	margin-top:-25px;
+}  
+.siteList {  
+	position:absolute;  
+	width:4000px;  
+}  
+.siteList dl{  
+	width:110px;  
+	height:150px;  
+	float:left;  
+	margin:10px 4px;
+	padding:2px 2px; 
+}  
+.siteList dl:hover {  
+	border:1px solid #333;  
+	background:#ccc;
+} 
+.siteList dl dt img { 
+	width:100px;  
+	height:125px;  
+	border:none;  
+}  
+.siteList dl dd { 
+	margin-left:-12px;
+	text-align:center;  
+}  
+.recomondSite span.prev{  
+	cursor:pointer;  
+	display:inline-block;  
+	width:35px;  
+	height:100px;  
+	background:url(../img/pageLeft.png) no-repeat left center;
+	margin-right:5px;
+	float:left;  
+} 
+.recomondSite span.next{  
+	cursor:pointer;  
+	display:inline-block;
+	width:35px;  
+	height:100px;  
+	background:url(../img/pageRight.png) no-repeat left center;  
+	float:right; 
+}
+
+#footer{
+	clear: both;
+	position:relative;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer li {
+	display: inline;
+	border: 1px solid #000;
+	font-weight: bold;
+	margin-right: 30px;
+	font-size:120%;
+}
+
+#footer p a {
+	color: #333;
+	text-decoration: underline;
+}
+#operateList{
+	height:25px;
+	width:400px;
+}
+#operateTable{
+	margin-top:10px;
+	margin-bottom:4px;
+	float:left;
+	margin-left:212px;
+	height:30px;
+	width:500px;
+}
+#operateTable td{
+	height:23px;
+	width:150px;
+	border:solid 1px;
+	text-align:center;
+}
+#favourTable{
+	margin-left:100px;
+	clear:both;
+	border-spacing:0px;
+}
+.headCol{
+	border-top:1px solid ;
+	border-right:1px solid;
+	border-left:1px solid;
+	text-align:center;
+	font-weight:bold;
+	font-size:20px;
+	height:120px;
+	width:120px;
+}
+#menu ul{
+	display:none;
+	z-index:10;
+	position:absolute;
+	width:700px;
+	margin-top:-20px;
+}
+
+#menu li:hover ul{
+       display:block;
+      // margin-top:11px;
+       margin-left:165px;
+}
+#menu li:hover ul li{
+		border:none;
+		display:block;
+		float:left;
+}
+#menu li:first-child{
+	border-top:1px solid;
+}
+#menu li{
+	border-bottom:1px solid ;
+	border-left:1px solid;
+	border-right:1px solid;
+	text-align:center;
+	padding-top:8px;
+	font-weight:bold;
+	height:23px;
+	width:200px;
+	list-style:none;
+	background:white;
+}
+.siteCatalog ul{
+	margin-top:-5px;
+}
+.siteCatalog
+{
+	border-top:1px solid ;
+	border-right:1px solid;
+	text-align:center;
+	height:120px;
+	width:500px;
+}
+#lastRow td{
+	border-bottom:1px solid;
+}
+.siteCatalog li{
+	margin-top:5px;
+	margin-right:5px;
+	border:1px solid;
+	height:20px;
+	width:100px;
+	float:left;
+	text-align:center;
+	padding-top:6px;
+	display:inline;
+}

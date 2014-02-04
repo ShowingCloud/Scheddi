@@ -1,0 +1,382 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>舍人-我的收藏</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="header">
+			<a href="#" id="setHome">设为主页</a>
+		</div>
+		<hr>
+		<h1>舍 人</h1>
+		<div id="mainDiv">
+			<div id="seachDiv">
+				<input type="text" id="seachTxt" name="seachTxt" />
+				<a href="#" id='seachContent'><input type="button" id="seachBtn" value="搜索"  /></a>
+			</div>
+			<div id="checkDiv">
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="radioBaidu" checked="checked" value="1"/>
+					<label for="radioBaidu">百度<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="radioGoogle" value="2"/>
+					<label for="radioGoogle">谷歌<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="sougou" value="3"/>
+					<label for="sougou">搜狗<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="bing" value="4"/>
+					<label for="bing">必应<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="yahoo" value="5"/>
+					<label for="yahoo">雅虎<label>
+				</div>
+			</div>
+		</div>
+		<div id="listMenu">
+			<input type="text" id="searchSite"/>
+			<input type="button" id="searchSiteBtn" value="搜站"/>
+			<ul id='menu'>
+					<li>
+						<a href="#">A．休闲娱乐</a>
+						<ul>
+							<li><a href="#">A音乐音频</a></li>
+							<li><a href="#">B游戏网站</a></li>
+							<li><a href="#">C动漫漫画</a></li>
+							<li><a href="#">D明星时尚</a></li>
+							<li><a href="#">E娱乐八卦</a></li>
+							<li><a href="#">F图片摄影</a></li>
+							<li><a href="#">G视频电影</a></li>
+							<li><a href="#">H星座风水</a></li>
+							<li><a href="#">I收藏爱好</a></li>
+							<li><a href="#">J军事政治</a></li>
+							<li><a href="#">K开心幽默</a></li>
+							<li><a href="#">L文学阅读</a></li>
+							<li><a href="#">M新闻媒体</a></li>
+							<li><a href="#">N博客论坛</a></li>
+							<li><a href="#">O社交互动</a></li>
+							<li><a href="#">P校园生活</a></li>
+							<li><a href="#">Q门户网站</a></li>
+							<li><a href="#">R其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">B．网上商城</a>
+						<ul>
+							<li><a href="#">A商务平台</a></li>
+							<li><a href="#">B团购导购</a></li>
+							<li><a href="#">C数码电器</a></li>
+							<li><a href="#">D快递物流</a></li>
+							<li><a href="#">E网上支付</a></li>
+							<li><a href="#">F日用百货</a></li>
+							<li><a href="#">G虚拟产品</a></li>
+							<li><a href="#">H服装配饰</a></li>
+							<li><a href="#">I鲜花礼品</a></li>
+							<li><a href="#">J美容护肤</a></li>
+							<li><a href="#">K母婴用品</a></li>
+							<li><a href="#">L餐饮美食</a></li>
+							<li><a href="#">M文体用品</a></li>
+							<li><a href="#">N国外网商</a></li>
+							<li><a href="#">O其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">C．生活服务</a>
+						<ul>
+							<li><a href="#">A天气播报</a></li>
+							<li><a href="#">B宾馆旅游</a></li>
+							<li><a href="#">C餐饮美食</a></li>
+							<li><a href="#">D房产家居</a></li>
+							<li><a href="#">E交通物流</a></li>
+							<li><a href="#">F医疗保健</a></li>
+							<li><a href="#">G宠物玩具</a></li>
+							<li><a href="#">H家政服务</a></li>
+							<li><a href="#">I婚恋家庭</a></li>
+							<li><a href="#">J生活常识</a></li>
+							<li><a href="#">K两性健康</a></li>
+							<li><a href="#">L其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">D．教育就业</a>
+						<ul>
+							<li><a href="#">A教育考试</a></li>
+							<li><a href="#">B外语综合</a></li>
+							<li><a href="#">C图书展馆</a></li>
+							<li><a href="#">D国防军事</a></li>
+							<li><a href="#">E出国留学</a></li>
+							<li><a href="#">F百科辞典</a></li>
+							<li><a href="#">G求职招聘</a></li>
+							<li><a href="#">H高等院校</a></li>
+							<li><a href="#">I培训机构</a></li>
+							<li><a href="#">J少儿教育</a></li>
+							<li><a href="#">K成人教育</a></li>
+							<li><a href="#">L其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">E．商业经济</a>
+						<ul>
+							<li><a href="#">A农林牧渔</a></li>
+							<li><a href="#">B能源化工</a></li>
+							<li><a href="#">C机械电子</a></li>
+							<li><a href="#">D建筑环境</a></li>
+							<li><a href="#">E金融保险</a></li>
+							<li><a href="#">F法律财经</a></li>
+							<li><a href="#">G贸易招商</a></li>
+							<li><a href="#">H广告营销</a></li>
+							<li><a href="#">I商务服务</a></li>
+							<li><a href="#">J会展活动</a></li>
+							<li><a href="#">K咨询服务</a></li>
+							<li><a href="#">L工业制品</a></li>
+							<li><a href="#">M纸业印刷</a></li>
+							<li><a href="#">N钟表眼镜</a></li>
+							<li><a href="#">O交通物流</a></li>
+							<li><a href="#">P影像器材 </a></li>
+							<li><a href="#">Q仪器仪表</a></li>
+							<li><a href="#">R冶金冶炼</a></li>
+							<li><a href="#">S汽摩配件</a></li>
+							<li><a href="#">T其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">F．艺术人文</a>
+						<ul>
+							<li><a href="#">A社会科学</a></li>
+							<li><a href="#">B文学艺术</a></li>
+							<li><a href="#">C美学哲学</a></li>
+							<li><a href="#">D国学历史</a></li>
+							<li><a href="#">E表演艺术</a></li>
+							<li><a href="#">F视觉艺术</a></li>
+							<li><a href="#">G语言艺术</a></li>
+							<li><a href="#">H综合艺术</a></li>
+							<li><a href="#">I其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">G．自然科学</a>
+						<ul>
+							<li><a href="#">A数学物理</a></li>
+							<li><a href="#">B生物化学</a></li>
+							<li><a href="#">C天文地理</a></li>
+							<li><a href="#">D生命科学</a></li>
+							<li><a href="#">E计算机科学</a></li>
+							<li><a href="#">F农学医学</a></li>
+							<li><a href="#">G其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">H．科技创新</a>
+						<ul>
+							<li><a href="#">A应用技术</a></li>
+							<li><a href="#">B设备器材</a></li>
+							<li><a href="#">C科技刊物</a></li>
+							<li><a href="#">D技术理论</a></li>
+							<li><a href="#">E通信技术</a></li>
+							<li><a href="#">F航空航天</a></li>
+							<li><a href="#">G生物环境</a></li>
+							<li><a href="#">H物理化学</a></li>
+							<li><a href="#">I其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">I．行政服务</a>
+						<ul>
+							<li><a href="#">A政府组织</a></li>
+							<li><a href="#">B省市导航</a></li>
+							<li><a href="#">C工商税务</a></li>
+							<li><a href="#">D公共福利</a></li>
+							<li><a href="#">E社会团体</a></li>
+							<li><a href="#">F统计报告</a></li>
+							<li><a href="#">G其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">J．地方区域</a>
+						<ul>
+							<li><a href="#">A华南</a></li>
+							<li><a href="#">B华北</a></li>
+							<li><a href="#">C华中</a></li>
+							<li><a href="#">D华东</a></li>
+							<li><a href="#">E西南</a></li>
+							<li><a href="#">F西北</a></li>
+							<li><a href="#">G东北</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">K．名人网站</a>
+						<ul>
+							<li><a href="#">A娱乐名人</a></li>
+							<li><a href="#">B教育名人</a></li>
+							<li><a href="#">C经济名人</a></li>
+							<li><a href="#">D军事名人</a></li>
+							<li><a href="#">E政治名人</a></li>
+							<li><a href="#">F社科名人</a></li>
+							<li><a href="#">G科学名人</a></li>
+							<li><a href="#">H艺术名人</a></li>
+							<li><a href="#">I其他名人</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">L．国外名站</a>
+						<ul>
+							<li><a href="#">A欧洲</a></li>
+							<li><a href="#">B美洲</a></li>
+							<li><a href="#">C亚洲</a></li>
+							<li><a href="#">D非洲</a></li>
+							<li><a href="#">E大洋洲</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">M．新闻媒体</a>
+						<ul>
+							<li><a href="#">A新闻报刊</a></li>
+							<li><a href="#">B广播电视</a></li>
+							<li><a href="#">C社交媒体</a></li>
+							<li><a href="#">D央视网站</a></li>
+							<li><a href="#">E卫视网站</a></li>
+							<li><a href="#">F门户网站</a></li>
+							<li><a href="#">G其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">N．电脑网络</a>
+						<ul>
+							<li><a href="#">A硬件软件</a></li>
+							<li><a href="#">B技术编程</a></li>
+							<li><a href="#">C设计素材</a></li>
+							<li><a href="#">D站长资源</a></li>
+							<li><a href="#">E域名空间</a></li>
+							<li><a href="#">F网络安全</a></li>
+							<li><a href="#">G邮件通信</a></li>
+							<li><a href="#">H手机数码</a></li>
+							<li><a href="#">I电子支付</a></li>
+							<li><a href="#">J网络安全</a></li>
+							<li><a href="#">K其他网站</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">O．综合其他</a>
+						<ul>
+							<li><a href="#">A门户网站</a></li>
+							<li><a href="#">B网址导航</a></li>
+							<li><a href="#">C分类目录</a></li>
+							<li><a href="#">D其他网站</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="rightPart">
+			<div id="navigatBar">
+				<ul id="navigatList">
+					<li><a href="favourite.html">我的收藏</a></li>
+					<li><a href="classifyCenter.html">分类中心</a></li>
+					<li><a href="rankCenter.html" target="_blank">排名中心</a></li>
+					<li><a href="http:www.google.com" target="_blank">论坛中心</a></li>
+					<li><a href="http:www.google.com" target="_blank">圈子中心</a></li>
+					<li><a href="serveCenter.html" target="_blank">服务中心</a></li>
+				</ul>
+			</div>
+			<br>
+			<div id="myFavourite">
+				<table id="operateTable">
+					<tr>
+						<td>添加新站</td>
+						<td>添加新组</td>
+						<td>编辑</td>
+					</tr>
+				</table>
+				<table id="favourTable">
+					<tr>
+						<td class="headCol">常用网站</td>
+						<td class="siteCatalog"><ul>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+						</ul></td>
+					</tr>
+					<tr><td class="headCol">休闲娱乐</td>
+						<td class="siteCatalog"><ul>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							</ul>
+						</td></tr>
+					<tr><td class="headCol">教育文化</td>
+						<td class="siteCatalog"><ul>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+						</ul></td>
+						</tr>
+					<tr id="lastRow"><td class="headCol">未分组</td>
+					<td class="siteCatalog"><ul>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+							<li><a href="#">百度</a></li>
+					</ul></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="footer">
+			<ol>
+				<li><a>关于我们</a></li>
+				<li><a>帮助中心</a></li>
+				<li><a>联系我们</a></li>
+				<li><a>网站合作</a></li>
+				<li><a>版权说明</a></li>
+			</ol>
+			<p>(<a href="http://www.hao123.com">@2013shren.com</a>) 版权所<em>人</em></p>
+		</div>
+	</body>
+</html>

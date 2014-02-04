@@ -1,0 +1,167 @@
+
+#topDiv{
+	margin-left:9%;
+	height:80px;
+	text-align:center;
+	width:791px;
+	border-left:1px solid;
+	border-right:1px solid;
+}
+
+#leftDiv {
+	border-left:1px solid;
+	border-bottom:1px solid;
+	border-top:1px solid;
+	float: left;
+	width: 160px;
+	height:900px;
+	margin-left:9%;
+}
+#serveList li{
+display:block;
+}
+#rightDiv{
+	border:1px solid;
+	float: left;
+	height:900px;
+	width: 630px;
+}
+.leftTd{
+	width:130px;
+	text-align:right;
+}
+td span{
+	color:red;
+}
+.submitButton{
+	border-radius:5px;
+	margin-left:140px;
+	height:40px;
+	width:80px;
+}
+h1{text-align:center;}
+
+a{
+	text-decoration: none;
+}
+.paragraph{
+	margin-left:auto;
+	margin-right:auto;
+	height: 800px;
+	width: 600px;
+	display:none;
+}
+.paragraph img{
+	height:168px;
+	width:600px;
+}
+
+#centerRelativeDiv{
+	margin-left:auto;
+	margin-right:auto;
+	height: 800px;
+	width: 600px;
+}
+#sitesRank{
+	width:600px;
+	height:150px;
+}
+#sitesRank ul li{
+	float:left;
+	display:inline;
+	border:1px solid;
+	margin-left:30px;
+	margin-right:30px;
+	margin-top:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+}
+#menuList{
+	margin-left:-30px;
+}
+#menuList  li{
+	display:block;
+	text-align:center;
+	padding-top:8px;
+	font-weight:bold;
+	height:23px;
+	list-style:none;
+}
+#centerRelativeDiv hr{
+	margin-top:30px;
+	border-top:solid 1px;
+	width:629px;
+	margin-left:-16px;
+}
+
+#titleTable{
+	height:50px;
+}
+#colTitle1{
+	width:300px;
+}
+#colTitle2{
+	text-align:center;
+	width:100px;
+}
+#colTitle3{
+	text-align:center;
+	width:100px;
+}
+#colTitle4{
+	text-align:center;
+	width:100px;
+}
+#sitesCol1{
+	width:20px;
+}
+#sitesCol2{
+	width:80px;
+}
+#sitesCol3{
+	width:200px;
+}
+#sitesCol4{
+	width:100px;
+}
+#sitesCol5{
+	width:100px;
+}
+#sitesCol6{
+	width:100px;
+}
+#sitesSortTable tr{
+	height:30px;
+	text-align:center;
+}
+.secondMenu li{
+	font-size:15px;
+	padding-top:5px;
+}
+#classifyRank{
+	width:600px;
+	height:160px;
+}
+#classifyRank ul li{
+	float:left;
+	display:inline;
+	border:1px solid;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+#searchKeyInput{
+	float:left;
+	margin-left:150px;
+	margin-top:15px;
+}
+#SubmitSearchbtn{
+	float:left;
+	margin-top:14px;
+}

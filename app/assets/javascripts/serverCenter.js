@@ -1,0 +1,27 @@
+$(document).ready(function(){
+	$("#aboutUs").show();
+	$('#usItem').click(function(){
+		$(".paragraph").hide();
+		$("#aboutUs").show();
+	});
+	$('#questionItem').click(function(){
+		$(".paragraph").hide();
+		$("#commonProblem").show();
+	});
+	$('#collectItem').click(function(){
+		$(".paragraph").hide();
+		$("#collectApplication").show();
+	});
+	$('#adItem').click(function(){
+		$(".paragraph").hide();
+		$("#advertiseBusiness").show();
+	});
+	$('#suggestItem').click(function(){
+		$(".paragraph").hide();
+		$("#opinionFeedback").show();
+	});
+	$('#copyrightItem').click(function(){
+		$(".paragraph").hide();
+		$("#copyrightStatement").show();
+	});
+});
