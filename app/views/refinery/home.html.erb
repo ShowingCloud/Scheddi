@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>舍人</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
 	<body>
-		<div id="topDiv">
-		<h1>分类中心</h1>
+		<hr>
+		<h1>舍 人</h1>
+		<div id="mainDiv">
+			<div id="seachDiv">
+				<input type="text" id="seachTxt" name="seachTxt" />
+				<a href="#" id='seachContent'><input type="button" id="seachBtn" value="搜索"  /></a>
+			</div>
+			<div id="checkDiv">
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="radioBaidu" checked="checked" value="1"/>
+					<label for="radioBaidu">百度<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="radioGoogle" value="2"/>
+					<label for="radioGoogle">谷歌<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="sougou" value="3"/>
+					<label for="sougou">搜狗<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="bing" value="4"/>
+					<label for="bing">必应<label>
+				</div>
+				<div class="radioTheme">
+					<input type="radio" name="radioChoice" id="yahoo" value="5"/>
+					<label for="yahoo">雅虎<label>
+				</div>
+			</div>
 		</div>
-		<div style="margin-left:auto;margin-right:auto;width: 793px;">
-		<div id="leftDiv">
-			<ul id='menuLists'>
-					<li class="selected">
+		<div id="listMenu">
+			<input type="text" id="searchSite"/>
+			<input type="button" id="searchSiteBtn" value="搜站"/>
+			<ul id='menu'>
+					<li>
 						<a href="#">A．休闲娱乐</a>
-							<ul class="secondMenu">
-								<li><a href="#">A音乐音频</a></li>
-								<li><a href="#">B游戏网站</a></li>
-								<li><a href="#">C动漫漫画</a></li>
-								<li><a href="#">D明星时尚</a></li>
-								<li><a href="#">E娱乐八卦</a></li>
-								<li><a href="#">F图片摄影</a></li>
-								<li><a href="#">G视频电影</a></li>
-								<li><a href="#">H星座风水</a></li>
-								<li><a href="#">I收藏爱好</a></li>
-								<li><a href="#">J军事政治</a></li>
-								<li><a href="#">K开心幽默</a></li>
-								<li><a href="#">L文学阅读</a></li>
-								<li><a href="#">M新闻媒体</a></li>
-								<li><a href="#">N博客论坛</a></li>
-								<li><a href="#">O社交互动</a></li>
-								<li><a href="#">P校园生活 </a></li>
-								<li><a href="#">Q门户网站 </a></li>
-								<li><a href="#">R其他网站</a></li>
-							</ul>
+						<ul class="secondMenu">
+							<li><a href="#">A音乐音频</a></li>
+							<li><a href="#">B游戏网站</a></li>
+							<li><a href="#">C动漫漫画</a></li>
+							<li><a href="#">D明星时尚</a></li>
+							<li><a href="#">E娱乐八卦</a></li>
+							<li><a href="#">F图片摄影</a></li>
+							<li><a href="#">G视频电影</a></li>
+							<li><a href="#">H星座风水</a></li>
+							<li><a href="#">I收藏爱好</a></li>
+							<li><a href="#">J军事政治</a></li>
+							<li><a href="#">K开心幽默</a></li>
+							<li><a href="#">L文学阅读</a></li>
+							<li><a href="#">M新闻媒体</a></li>
+							<li><a href="#">N博客论坛</a></li>
+							<li><a href="#">O社交互动</a></li>
+							<li><a href="#">P校园生活 </a></li>
+							<li><a href="#">Q门户网站 </a></li>
+							<li><a href="#">R其他网站</a></li>
+						</ul>
 					</li>
 					<li>
 						<a href="#">B．网上商城</a>
@@ -234,130 +272,167 @@
 							<li><a href="#">D其他网站</a></li>
 						</ul>
 					</li>
-			</ul>
-		</div>
-		<div id="rightDiv">
-			<div style="display:block;height:50px;">
-			<input type="text" id="searchKeyInput"/>
-			<input type="button" id="SubmitSearchbtn" value="提交" />
-			</div>
-			<hr>
-			<div id="classifyRank">
-				<ul>
-					<li>百度</li>
-					<li>谷歌</li>
-					<li>新浪</li>
-					<li>腾讯</li>
-					<li>搜狐</li>
-					<li>网易</li>
-					<li>天猫</li>
-					<li>京东</li>
-					<li>百度</li>
-					<li>谷歌</li>
-					<li>新浪</li>
-					<li>腾讯</li>
-					<li>搜狐</li>
-					<li>网易</li>
-					<li>天猫</li>
-					<li>京东</li>
-					<li>天猫</li>
-					<li>京东</li>
 				</ul>
 			</div>
-			<hr>
-			<table id="titleTable">
-				<tr>
-					<td id="colTitle1">Top100</td>
-					<td id="colTitle2">Alexa</td>
-					<td id="colTitle3">PR值</td>
-					<td id="colTitle4">权重</td>
-				</tr>
-			</table>
-			<table id="sitesSortTable">
-				<tr>
-					<td id="sitesCol1">1.</td>
-					<td id="sitesCol2">百度</td>
-					<td id="sitesCol3"><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td id="sitesCol4">流量xx</td>
-					<td id="sitesCol5">PRxx</td>
-					<td id="sitesCol6">xxx</td>
-				</tr>
-				<tr>
-					<td>2.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>3.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>4.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>5.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>6.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>7.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>8.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>9.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-				<tr>
-					<td>10.</td>
-					<td>百度</td>
-					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
-				</tr>
-			</table>
-			<hr>
+			<!--<ol type="A">
+				<li>休闲娱乐</li>
+				<li>网上商城</li>
+				<li>生活服务</li>
+				<li>教育就业</li>
+				<li>商业经济</li>
+				<li>艺术人文</li>
+				<li>自然科学</li>
+				<li>科技创新</li>
+				<li>行政服务</li>
+				<li>地方区域</li>
+				<li>名人网站</li>
+				<li>国外名站</li>
+				<li>新闻媒体</li>
+				<li>电脑网络</li>
+				<li>综合其他</li>
+			</ol>
+			-->
 		</div>
-		</div>
+		<div id="rightPart">
+			<div id="navigatBar">
+				<ul id="navigatList">
+					<li><a href="favourite.html">我的收藏</a></li>
+					<li><a href="classifyCenter.html">分类中心</a></li>
+					<li><a href="rankCenter.html">排名中心</a></li>
+					<li><a href="http://www.google.com" target="_blank">论坛中心</a></li>
+					<li><a href="http://www.google.com" target="_blank">圈子中心</a></li>
+					<li><a href="serveCenter.html" target="_blank">服务中心</a></li>
+				</ul>
+			</div>
+			<div id="siteDisplay">
+				<div class="recomondSite" id="recommendDiv">
+					<h3>推荐网站:</h3>  
+					<span class="prev" id="prev1"></span>  
+					<div class="siteContent" id="content1">  
+						<div class="siteList" id="content_list1">  
+							<dl>  
+								<dt><img src="img/a.jpg"/></dt>  
+								<dd>推荐网站1</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/b.jpg"/></dt>  
+								<dd>推荐网站2</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/c.jpg"/></dt>  
+								<dd>推荐网站3</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/d.jpg"/></dt>  
+								<dd>推荐网站4</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站5</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/f.jpg"/></dt>  
+								<dd>推荐网站6</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站7</dd>  
+							</dl>  
+						</div>  
+					</div>  
+					<span class="next" id="next1"></span> 
+				</div>
+				
+				<div class="recomondSite" id="newHotSite">
+					<h3>最新酷站:</h3>  
+					<span class="prev" id="prev2"></span>  
+					<div class="siteContent" id="content2">  
+						<div class="siteList" id="content_list2">  
+							<dl>  
+								<dt><img src="img/a.jpg"/></dt>  
+								<dd>推荐网站1</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/b.jpg"/></dt>  
+								<dd>推荐网站2</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/c.jpg"/></dt>  
+								<dd>推荐网站3</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/d.jpg"/></dt>  
+								<dd>推荐网站4</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站5</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/f.jpg"/></dt>  
+								<dd>推荐网站6</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站7</dd>  
+							</dl>  
+						</div>  
+					</div>  
+					<span class="next" id="next2"></span> 
+				</div>
+				
+				<div class="recomondSite" id="individualRecmdDiv">
+					<h3>个性推荐:</h3>  
+					<span class="prev" id="prev3"></span>  
+					<div class="siteContent" id="content3">  
+						<div class="siteList" id="content_list3">  
+							<dl>  
+								<dt><img src="img/a.jpg"/></dt>  
+								<dd>推荐网站1</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/b.jpg"/></dt>  
+								<dd>推荐网站2</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/c.jpg"/></dt>  
+								<dd>推荐网站3</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/d.jpg"/></dt>  
+								<dd>推荐网站4</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站5</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/f.jpg"/></dt>  
+								<dd>推荐网站6</dd>  
+							</dl>  
+							<dl>  
+								<dt><img src="img/e.jpg"/></dt>  
+								<dd>推荐网站7</dd>  
+							</dl>  
+						</div>  
+					</div>  
+					<span class="next" id="next3"></span> 
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
+
+				<!-- <p>热门推荐:</p>
+				<div id="recomondSite">
+					<ul class="webView" id="recommendList">
+					<li><img src="img/a.jpg"></li>
+					<li><img src="img/b.jpg"></li>
+					<li><img src="img/c.jpg"></li>
+					<li><img src="img/d.jpg"></li>
+					<li><img src="img/e.jpg"></li>
+					<li><img src="img/f.jpg"></li>
+					</ul>
+					<ul class="webView"></ul>
+				</div>
+				-->

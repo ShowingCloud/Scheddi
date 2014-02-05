@@ -20,7 +20,8 @@ p{
 	margin: 0 0 1em;
 }
 #header{
-	height:20px;
+	height:25px;
+	border-bottom:1px solid;
 }
 #header ul{
 	margin-top:0px;
@@ -37,7 +38,7 @@ p{
 }
 #mainBg {
 	margin-top: -3%;
-	//background-image: url(../img/paris.jpg);
+	//background-image: url(/assets/paris.jpg);
 	height:110%;
 }
 
@@ -84,9 +85,9 @@ h1 {
 }
 #rightPart{
 	margin-top:2%;
-	margin-left:23%;
+	margin-left:219px;
 	float:left;
-	height:600px;
+	height:550px;
 }
 #navigatBar{
 	position:relative;
@@ -109,7 +110,7 @@ h1 {
 	border-bottom:1px solid ;
 }
 #searchSite{
-	width:145px;
+	width:95px;
 	margin-left:40px;
 }
  
@@ -119,8 +120,8 @@ h1 {
 	margin-left:60px;
 }
 .recomondSite {
-	width:690px;  
-	height:160px;  
+	width:630px;  
+	height:140px;  
 	margin:0 5px 5px 0;
 	position:relative;
 	margin-left:50px;
@@ -128,8 +129,8 @@ h1 {
 }
 .siteContent{  
 	position:relative;  
-	width:610px;  
-	height:160px;  
+	width:540px;  
+	height:140px;  
 	display:inline-block;  
 	overflow:hidden;  
 	float:left;  
@@ -140,8 +141,8 @@ h1 {
 	width:4000px;  
 }  
 .siteList dl{  
-	width:110px;  
-	height:150px;  
+	width:95px;  
+	height:95px;  
 	float:left;  
 	margin:10px 4px;
 	padding:2px 2px; 
@@ -151,8 +152,8 @@ h1 {
 	background:#ccc;
 } 
 .siteList dl dt img { 
-	width:100px;  
-	height:125px;  
+	width:95px;  
+	height:95px;  
 	border:none;  
 }  
 .siteList dl dd { 
@@ -164,7 +165,7 @@ h1 {
 	display:inline-block;  
 	width:35px;  
 	height:100px;  
-	background:url(../img/pageLeft.png) no-repeat left center;
+	background:url(/assets/pageLeft.png) no-repeat left center;
 	margin-right:5px;
 	float:left;  
 } 
@@ -173,7 +174,7 @@ h1 {
 	display:inline-block;
 	width:35px;  
 	height:100px;  
-	background:url(../img/pageRight.png) no-repeat left center;  
+	background:url(/assets/pageRight.png) no-repeat left center;  
 	float:right; 
 }
 
@@ -259,7 +260,7 @@ h1 {
 	padding-top:8px;
 	font-weight:bold;
 	height:23px;
-	width:200px;
+	width:150px;
 	list-style:none;
 	background:white;
 }
