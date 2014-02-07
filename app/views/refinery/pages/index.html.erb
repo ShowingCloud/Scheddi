@@ -286,7 +286,7 @@
 		<div id="rightPart">
 			<div id="navigatBar">
 				<ul id="navigatList">
-					<li><a href="/我的收藏"  target="_blank">我的收藏</a></li>
+					<li><a onclick="favourite()"  target="_blank">我的收藏</a></li>
 					<li><a href="/分类中心"  target="_blank">分类中心</a></li>
 					<li><a href="/排名中心"  target="_blank">排名中心</a></li>
 					<li><a href="http://www.google.com" target="_blank">论坛中心</a></li>
@@ -413,7 +413,17 @@
 		</div>
 	</body>
 </html>
+<% content_for :javascripts do %>
+<script>
+function favourite () {
+	
+  		$("#siteDisplay").load ('/home/我的收藏  #myFavourite');
+  	
+}
 
+
+</script>
+<% end %> 
 				<!-- <p>热门推荐:</p>
 				<div id="recomondSite">
 					<ul class="webView" id="recommendList">

@@ -117,14 +117,14 @@ h1 {
 #siteDisplay{
 	position:absolute;
 	margin-top:20px;
-	margin-left:60px;
+	margin-left:105px;
 }
 .recomondSite {
 	width:630px;  
 	height:140px;  
 	margin:0 5px 5px 0;
 	position:relative;
-	margin-left:50px;
+//	margin-left:50px;
 	margin-top:20px; 
 }
 .siteContent{  
@@ -206,7 +206,7 @@ h1 {
 	margin-top:10px;
 	margin-bottom:4px;
 	float:left;
-	margin-left:212px;
+	//margin-left:212px;
 	height:30px;
 	width:500px;
 }
@@ -217,7 +217,7 @@ h1 {
 	text-align:center;
 }
 #favourTable{
-	margin-left:100px;
+//	margin-left:100px;
 	clear:both;
 	border-spacing:0px;
 }
@@ -241,8 +241,8 @@ h1 {
 
 #menu li:hover ul{
        display:block;
-      // margin-top:11px;
-       margin-left:165px;
+       margin-top:-23px;
+       margin-left:125px;
 }
 #menu li:hover ul li{
 		border:none;
@@ -257,9 +257,9 @@ h1 {
 	border-left:1px solid;
 	border-right:1px solid;
 	text-align:center;
-	padding-top:8px;
+	padding-top:7px;
 	font-weight:bold;
-	height:23px;
+	height:21px;
 	width:150px;
 	list-style:none;
 	background:white;
