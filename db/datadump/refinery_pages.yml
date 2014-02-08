@@ -1,0 +1,158 @@
+
+---
+refinery_pages:
+  columns:
+  - id
+  - parent_id
+  - path
+  - slug
+  - show_in_menu
+  - link_url
+  - menu_match
+  - deletable
+  - draft
+  - skip_to_first_child
+  - lft
+  - rgt
+  - depth
+  - view_template
+  - layout_template
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 
+    - 
+    - home
+    - true
+    - "/"
+    - "^/$"
+    - false
+    - false
+    - false
+    - 1
+    - 6
+    - 0
+    - index
+    - 
+    - 2014-01-10 09:54:52.000000000 Z
+    - 2014-02-04 06:22:41.000000000 Z
+  - - 2
+    - 1
+    - 
+    - page-not-found
+    - false
+    - 
+    - "^/404$"
+    - false
+    - false
+    - false
+    - 4
+    - 5
+    - 1
+    - 
+    - 
+    - 2014-01-10 09:54:52.000000000 Z
+    - 2014-01-10 09:54:52.000000000 Z
+  - - 4
+    - 1
+    - 
+    - "我的收藏"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 2
+    - 3
+    - 1
+    - favourite
+    - 
+    - 2014-02-04 06:42:24.000000000 Z
+    - 2014-02-04 06:42:24.000000000 Z
+  - - 5
+    - 
+    - 
+    - "分类中心"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 7
+    - 8
+    - 0
+    - classifyCenter
+    - 
+    - 2014-02-04 06:42:41.000000000 Z
+    - 2014-02-04 06:54:49.000000000 Z
+  - - 6
+    - 
+    - 
+    - "排名中心"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 9
+    - 10
+    - 0
+    - rankCenter
+    - 
+    - 2014-02-04 06:42:52.000000000 Z
+    - 2014-02-04 06:55:02.000000000 Z
+  - - 7
+    - 
+    - 
+    - "服务中心"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 15
+    - 16
+    - 0
+    - serveCenter
+    - 
+    - 2014-02-04 06:43:02.000000000 Z
+    - 2014-02-04 06:57:15.000000000 Z
+  - - 8
+    - 
+    - 
+    - "论坛中心"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 11
+    - 12
+    - 0
+    - show
+    - 
+    - 2014-02-04 06:43:52.000000000 Z
+    - 2014-02-04 06:43:52.000000000 Z
+  - - 9
+    - 
+    - 
+    - "圈子中心"
+    - true
+    - ''
+    - 
+    - true
+    - false
+    - false
+    - 13
+    - 14
+    - 0
+    - show
+    - 
+    - 2014-02-04 06:43:59.000000000 Z
+    - 2014-02-04 06:43:59.000000000 Z
