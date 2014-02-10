@@ -15,7 +15,7 @@
 	border-top:1px solid;
 	float: left;
 	width: 160px;
-	height:900px;
+
 	margin-left:auto;
 	margin-right:auto;
 }
@@ -25,7 +25,7 @@ display:block;
 #rightDiv{
 	border:1px solid;
 	float: left;
-	height:900px;
+
 	width: 630px;
 }
 .leftTd{
@@ -61,12 +61,14 @@ a{
 #centerRelativeDiv{
 	margin-left:auto;
 	margin-right:auto;
-	height: 800px;
-	width: 600px;
+	width: 630px;
 }
-#sitesRank{
-	width:600px;
-	height:150px;
+#sitesRank
+{
+
+	border-bottom:1px solid;
+	width:630px;
+	height:180px;
 }
 #sitesRank ul li{
 	float:left;
@@ -97,8 +99,13 @@ a{
 	width:629px;
 	margin-left:-16px;
 }
+#titleTable td{
+	border-bottom:1px solid;	
+}
 
 #titleTable{
+	
+	border-collapse:collapse;
 	height:50px;
 }
 #colTitle1{
@@ -106,15 +113,15 @@ a{
 }
 #colTitle2{
 	text-align:center;
-	width:100px;
+	width:110px;
 }
 #colTitle3{
 	text-align:center;
-	width:100px;
+	width:110px;
 }
 #colTitle4{
 	text-align:center;
-	width:100px;
+	width:110px;
 }
 #sitesCol1{
 	width:20px;
@@ -143,7 +150,9 @@ a{
 	padding-top:5px;
 }
 #classifyRank{
-	width:600px;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	width:630px;
 	height:160px;
 }
 #classifyRank ul li{
@@ -162,6 +171,9 @@ a{
 	float:left;
 	margin-left:150px;
 	margin-top:15px;
+}
+.class{
+clear:both;
 }
 #SubmitSearchbtn{
 	float:left;
