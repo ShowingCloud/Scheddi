@@ -80,11 +80,11 @@ h1 {
 	float:left;
 	position:absolute;
 	z-index:999;
-	margin-top:2%;
-	margin-left:8%;
+	margin-top:30px;
+	margin-left:100px;
 }
 #rightPart{
-	margin-top:2%;
+	margin-top:30px;
 	margin-left:219px;
 	float:left;
 	height:550px;
