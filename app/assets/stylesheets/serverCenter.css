@@ -10,22 +10,22 @@
 }
 
 #leftDiv {
-	border-left:1px solid;
-	border-bottom:1px solid;
-	border-top:1px solid;
+	border: 1px solid;
 	float: left;
 	width: 160px;
-
+	min-height:650px;
 	margin-left:auto;
 	margin-right:auto;
 }
 #serveList li{
-display:block;
+	display:block;
 }
 #rightDiv{
-	border:1px solid;
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-right:1px solid;
 	float: left;
-
+	min-height: 650px;
 	width: 630px;
 }
 .leftTd{
