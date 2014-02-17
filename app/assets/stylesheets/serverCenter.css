@@ -1,16 +1,29 @@
-
+.clear{
+	clear:both;
+}
+.containerDiv{
+	margin-left: auto;
+	margin-right: auto; 
+	width: 793px;
+	border-bottom: 1px solid;
+	border-top:1px solid;
+	border-right:1px solid;
+}
 #topDiv{
 	margin-left:auto;
 	margin-right:auto;
 	height:80px;
 	text-align:center;
-	width:791px;
+	width:792px;
 	border-left:1px solid;
 	border-right:1px solid;
 }
-
-#leftDiv {
-	border: 1px solid;
+#serverListDiv{
+	height:800px;
+}
+.leftDiv {
+	border-left: 1px solid;
+	border-right: 1px solid;
 	float: left;
 	width: 160px;
 	min-height:650px;
@@ -20,10 +33,7 @@
 #serveList li{
 	display:block;
 }
-#rightDiv{
-	border-top:1px solid;
-	border-bottom:1px solid;
-	border-right:1px solid;
+.rightDiv{
 	float: left;
 	min-height: 650px;
 	width: 630px;
