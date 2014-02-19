@@ -4,7 +4,6 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-size: small;
 }
-
 a {
 	text-decoration: none;
 }
@@ -97,8 +96,8 @@ h1 {
 #navigatList li:first-child{
 	border-left:1px solid ;
 }
+
 #navigatList li{
-	
 	display:inline-block;
 	float:left;
 	padding-left:10px;
@@ -113,8 +112,12 @@ h1 {
 	width:95px;
 	margin-left:40px;
 }
+#myFavourite{
+	display:none;	
+	margin-left:105px;
+}
  
-#siteDisplay{
+.sitesDisplay{
 	position:absolute;
 	margin-top:20px;
 	margin-left:105px;

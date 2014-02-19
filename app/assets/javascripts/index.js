@@ -35,6 +35,24 @@ function prev(content, content_list){
 }
 
 $(document).ready(function(){
+	$("#navigatList li:first-child").hover(function(){
+		$("#sitesPreview").hide();
+		$("#myFavourite").show();
+	},
+	function(){
+//		alert("asdfasdf");
+		$("#sitesPreview").show();
+		$("#myFavourite").hide();
+		
+	});
+	$('#myFavourite').hover(function(){
+		$(this).show();	
+	},
+	function(){
+		$(this).hide();	
+		$("#sitesPreview").show();
+	});
+
 	//$("#menu").menu();
 	var choice = null;
 	function getCheckId(){
