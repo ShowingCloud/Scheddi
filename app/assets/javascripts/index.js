@@ -35,23 +35,14 @@ function prev(content, content_list){
 }
 
 $(document).ready(function(){
-	$("#navigatList li:first-child").hover(function(){
+	$("#navigatList li:first-child").mouseover(function(){
 		$("#sitesPreview").hide();
 		$("#myFavourite").show();
-	},
-	function(){
-//		alert("asdfasdf");
-		$("#sitesPreview").show();
-		$("#myFavourite").hide();
-		
 	});
-	$('#myFavourite').hover(function(){
-		$(this).show();	
-	},
-	function(){
-		$(this).hide();	
-		$("#sitesPreview").show();
-	});
+	$('#myFavourite').mouseout(function(){
+		$(this).hide();
+	}
+	);
 
 	//$("#menu").menu();
 	var choice = null;
