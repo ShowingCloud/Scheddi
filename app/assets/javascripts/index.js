@@ -39,8 +39,20 @@ $(document).ready(function(){
 		$("#sitesPreview").hide();
 		$("#myFavourite").show();
 	});
+	
+	$("#navigatList li:first-child").mouseout(function(){
+		$("#sitesPreview").show();
+		$("#myFavourite").hide();
+	});
+
+	$("#myFavourite").mouseover(function(){
+		$("#sitesPreview").hide();
+		$("#myFavourite").show();
+	});
+
 	$('#myFavourite').mouseout(function(){
 		$(this).hide();
+		$("#sitesPreview").show();
 	}
 	);
 
