@@ -132,7 +132,7 @@ h1 {
 }
 .siteContent{  
 	position:relative;  
-	width:540px;  
+	width:536px;  
 	height:140px;  
 	display:inline-block;  
 	overflow:hidden;  
@@ -170,15 +170,18 @@ h1 {
 	height:100px;  
 	background:url(/assets/pageLeft.png) no-repeat left center;
 	margin-right:5px;
-	float:left;  
+	float:left;
+	margin-top:-15px;  
 } 
-.recomondSite span.next{  
+.recomondSite span.next{ 
+	margin-top:-15px; 
 	cursor:pointer;  
 	display:inline-block;
 	width:35px;  
 	height:100px;  
 	background:url(/assets/pageRight.png) no-repeat left center;  
 	float:right; 
+	margin-right:12px;
 }
 
 #footer{
