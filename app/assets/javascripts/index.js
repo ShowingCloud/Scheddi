@@ -11,7 +11,7 @@ function next(content, content_list){
 			content_list.animate({ left : '0px'}, "slow"); 
 			page = 1;  
 		  }else{  
-			content_list.animate({ left : '-='+v_width }, "slow");  
+			content_list.animate({ left : '-='+(v_width) }, "slow");
 			page++;  
 		 }  
 	 }  
@@ -28,7 +28,7 @@ function prev(content, content_list){
 			content_list.animate({ left : '-='+v_width*(page_count-1) }, "slow");  
 			page = page_count;  
 		}else{  
-			content_list.animate({ left : '+='+v_width }, "slow");  
+			content_list.animate({ left : '+='+(v_width) }, "slow");  
 			page--;  
 		}  
 	} 
@@ -55,13 +55,28 @@ $(document).ready(function(){
 		$("#sitesPreview").show();
 	}
 	);
-
+	$('.prev').hover(
+		function(){
+			$(this).css("background-image","url(/assets/pageLeftOn.png)");
+		},
+		function(){
+			$(this).css("background-image","url(/assets/pageLeft.png)");
+		}
+	);
+	$('.next').hover(
+		function(){
+			$(this).css("background-image","url(/assets/pageRightOn.png)");
+		},
+		function(){
+			$(this).css("background-image","url(/assets/pageRight.png)");
+		}
+	);
 	//$("#menu").menu();
 	var choice = null;
 	function getCheckId(){
 		choice = $("input[name='radioChoice'][type='radio']:checked").val();
 	}
-	$('#seachContent').click(function(e){
+	$('#seachBtn').click(function(e){
 		getCheckId();
 		var value = $('#seachTxt').val();
 		

@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<body>
-		<h1>舍 人</h1>
 		<div id="mainDiv">
+			<div id="headline"><img src="assets/headline.png"></img></div>
 			<div id="seachDiv">
 				<input type="text" id="seachTxt" name="seachTxt" />
-				<a href="#" id='seachContent'><input type="button" id="seachBtn" value="搜索"  /></a>
+				<input type="button" id="seachBtn" />
 			</div>
 			<div id="checkDiv">
-				<div class="radioTheme">
 					<input type="radio" name="radioChoice" id="radioBaidu" checked="checked" value="1"/>
-					<label for="radioBaidu">百度<label>
-				</div>
-				<div class="radioTheme">
+					<label for="radioBaidu">百度</label>
 					<input type="radio" name="radioChoice" id="radioGoogle" value="2"/>
-					<label for="radioGoogle">谷歌<label>
-				</div>
-				<div class="radioTheme">
+					<label for="radioGoogle">谷歌</label>
 					<input type="radio" name="radioChoice" id="sougou" value="3"/>
-					<label for="sougou">搜狗<label>
-				</div>
-				<div class="radioTheme">
+					<label for="sougou">搜狗</label>
 					<input type="radio" name="radioChoice" id="bing" value="4"/>
-					<label for="bing">必应<label>
-				</div>
-				<div class="radioTheme">
+					<label for="bing">必应</label>
 					<input type="radio" name="radioChoice" id="yahoo" value="5"/>
-					<label for="yahoo">雅虎<label>
-				</div>
+					<label for="yahoo">雅虎</label>
 			</div>
-		</div>
-		<div style="margin-left:auto;margin-right:auto;width: 1200px;">
+		<div id="leftRightContainer">
 		<div id="listMenu">
-			<input type="text" id="searchSite"/>
-			<input type="button" id="searchSiteBtn" value="搜站"/>
+			<div id="listHeadDiv"><p style="padding-top:8px;">所有网站分类</p></div>
 			<ul id='menu'>
 					<li>
-						<a href="#">A．休闲娱乐</a>
+						<span style="color:red;">A．</span>休闲娱乐
 						<ul class="secondMenu">
 							<li><a href="#">A音乐音频</a></li>
 							<li><a href="#">B游戏网站</a></li>
@@ -59,7 +47,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">B．网上商城</a>
+						<span style="color:red;">B．</span>网上商城
 						<ul class="secondMenu">
 							<li><a href="#">A商务平台</a></li>
 							<li><a href="#">B团购导购</a></li>
@@ -79,7 +67,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">C．生活服务</a>
+						<span style="color:red;">C．</span>生活服务
 						<ul class="secondMenu">
 							<li><a href="#">A天气播报</a></li>
 							<li><a href="#">B宾馆旅游</a></li>
@@ -96,7 +84,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">D．教育就业</a>
+						<span style="color:red;">D．</span>教育就业
 						<ul class="secondMenu">
 							<li><a href="#">A教育考试</a></li>
 							<li><a href="#">B外语综合</a></li>
@@ -113,7 +101,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">E．商业经济</a>
+						<span style="color:red;">E．</span>商业经济
 						<ul class="secondMenu">
 							<li><a href="#">A农林牧渔</a></li>
 							<li><a href="#">B能源化工</a></li>
@@ -138,7 +126,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">F．艺术人文</a>
+						<span style="color:red;">F．</span>艺术人文
 						<ul class="secondMenu">
 							<li><a href="#">A社会科学</a></li>
 							<li><a href="#">B文学艺术</a></li>
@@ -152,7 +140,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">G．自然科学</a>
+						<span style="color:red;">G．</span>自然科学
 						<ul class="secondMenu">
 							<li><a href="#">A数学物理</a></li>
 							<li><a href="#">B生物化学</a></li>
@@ -164,7 +152,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">H．科技创新</a>
+						<span style="color:red;">H．</span>科技创新
 						<ul class="secondMenu">
 							<li><a href="#">A应用技术</a></li>
 							<li><a href="#">B设备器材</a></li>
@@ -178,7 +166,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">I．行政服务</a>
+						<span style="color:red;">I．</span>行政服务
 						<ul class="secondMenu">
 							<li><a href="#">A政府组织</a></li>
 							<li><a href="#">B省市导航</a></li>
@@ -190,7 +178,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">J．地方区域</a>
+						<span style="color:red;">J．</span>地方区域
 						<ul class="secondMenu">
 							<li><a href="#">A华南</a></li>
 							<li><a href="#">B华北</a></li>
@@ -202,7 +190,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">K．名人网站</a>
+						<span style="color:red;">K．</span>名人网站
 						<ul class="secondMenu">
 							<li><a href="#">A娱乐名人</a></li>
 							<li><a href="#">B教育名人</a></li>
@@ -216,7 +204,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">L．国外名站</a>
+						<span style="color:red;">L．</span>国外名站
 						<ul class="secondMenu">
 							<li><a href="#">A欧洲</a></li>
 							<li><a href="#">B美洲</a></li>
@@ -226,7 +214,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">M．新闻媒体</a>
+						<span style="color:red;">M．</span>新闻媒体
 						<ul class="secondMenu">
 							<li><a href="#">A新闻报刊</a></li>
 							<li><a href="#">B广播电视</a></li>
@@ -238,7 +226,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">N．电脑网络</a>
+						<span style="color:red;">N．</span>电脑网络
 						<ul class="secondMenu">
 							<li><a href="#">A硬件软件</a></li>
 							<li><a href="#">B技术编程</a></li>
@@ -254,7 +242,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">O．综合其他</a>
+						<span style="color:red;">O．</span>综合其他
 						<ul class="secondMenu">
 							<li><a href="#">A门户网站</a></li>
 							<li><a href="#">B网址导航</a></li>
@@ -274,11 +262,13 @@
 					<li><a href="http://www.google.com" target="_blank">论坛中心</a></li>
 					<li><a href="http://www.google.com" target="_blank">圈子中心</a></li>
 					<li><a href="/服务中心" target="_blank">服务中心</a></li>
+					<li><div id="searchSitesDiv"><input type="text" id="searchSite"/><input type="button" id="searchSiteBtn"/></div></li>
 				</ul>
 			</div>
+			<div id="divideDiv"></div>
 			<div id="sitesPreview" class="sitesDisplay">
 				<div class="recomondSite" id="recommendDiv">
-					<h3>推荐网站:</h3>  
+					<h2>推荐网站:</h2>  
 					<span class="prev" id="prev1"></span>  
 					<div class="siteContent" id="content1">  
 						<div class="siteList" id="content_list1">  
@@ -287,27 +277,27 @@
 								<dd>推荐网站1</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/b.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站2</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/c.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站3</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/d.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站4</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/e.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站5</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/f.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站6</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/g.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站7</dd>  
 							</dl>  
 						</div>  
@@ -316,7 +306,7 @@
 				</div>
 				
 				<div class="recomondSite" id="newHotSite">
-					<h3>最新酷站:</h3>  
+					<h2>最新酷站:</h2>  
 					<span class="prev" id="prev2"></span>  
 					<div class="siteContent" id="content2">  
 						<div class="siteList" id="content_list2">  
@@ -325,27 +315,27 @@
 								<dd>推荐网站1</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/b.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站2</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/c.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站3</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/d.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站4</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/e.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站5</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/f.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站6</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/g.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站7</dd>  
 							</dl>  
 						</div>  
@@ -354,7 +344,7 @@
 				</div>
 				
 				<div class="recomondSite" id="individualRecmdDiv">
-					<h3>个性推荐:</h3>  
+					<h2>个性推荐:</h2>  
 					<span class="prev" id="prev3"></span>  
 					<div class="siteContent" id="content3">  
 						<div class="siteList" id="content_list3">  
@@ -363,27 +353,27 @@
 								<dd>推荐网站1</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/b.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站2</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/c.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站3</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/d.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站4</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/e.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站5</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/f.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站6</dd>  
 							</dl>  
 							<dl>  
-								<dt><img src="/assets/g.jpg"/></dt>  
+								<dt><img src="/assets/a.jpg"/></dt>  
 								<dd>推荐网站7</dd>  
 							</dl>  
 						</div>  
@@ -467,6 +457,7 @@
 					</tr>
 				</table>
 			</div>
+		</div>
 		</div>
 		</div>
 	</body>
