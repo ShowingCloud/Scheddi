@@ -35,6 +35,14 @@ function prev(content, content_list){
 }
 
 $(document).ready(function(){
+	$("#login").click(function(){
+		$("#disableDiv").css("display","block");
+		$("#loginDiv").css("display","block");
+	});
+	$("#closeLoginBtn").click(function(){
+		$("#disableDiv").css("display","none");
+		$("#loginDiv").css("display","none");
+	});
 	$("#navigatList li:first-child").mouseover(function(){
 		$("#sitesPreview").hide();
 		$("#myFavourite").show();

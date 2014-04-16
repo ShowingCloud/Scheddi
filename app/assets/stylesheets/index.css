@@ -5,6 +5,95 @@ body {
 	font-size: small;
 	background-color:rgb(236,236,236);
 }
+#disableDiv{
+	height:100%;
+	width:100%;
+	background:#000;
+	z-index:100;
+	opacity:0.3;
+	position:absolute;
+	display:none;
+	}
+	
+#loginDiv{
+		z-index:101;
+		position:absolute;
+		display:none;
+		height:300px;
+		width:300px;
+		margin-top:-150px;
+		margin-left:-150px;
+		top:50%;
+		left:50%;
+		background-color:#FFFFFF;
+	}
+	#loginHeadDiv{
+		height:40px;
+		width:300px;
+		background-color:#F0F0F0;
+	}
+	#closeLoginBtn{
+		background-color:#F0F0F0;
+		float:right;
+		border:0px;
+		background-image:url(close.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		height:25px;
+		width:25px;
+		cursor:pointer;
+		margin:7px 8px 0 0;
+		padding:0;
+	}
+	#username{
+		height:30px;
+		width:235px;
+		background-image:url(user.jpg);
+		background-repeat:no-repeat;
+		background-position:left;
+		padding-left:21px;
+		margin-left:20px;
+	}
+	#password{
+		height:30px;
+		width:235px;
+		background-image:url(key.jpg);
+		background-repeat:no-repeat;
+		background-position:left;
+		padding-left:21px;
+		margin-left:20px;
+	}
+	#remember{
+		margin-left:20px;
+	}
+	#remberLabel{
+		
+		margin-left:-8px;
+	}
+	#forgetLink{
+		margin-left:90px;
+		text-decoration:none;
+		color:#0000EE;
+	}
+	#loginBtn{
+		border-style:solid;
+		width:260px;
+		height:45px;
+		font-size:16px;
+		background-color:#3399FF;
+		font-weight:700;
+		color:white;
+		margin-left:20px;
+		cursor:pointer;
+	}
+	#registerLabel{
+		margin-left:208px;
+		cursor:pointer;
+		color:#0000EE;
+	}
+#registerDiv{
+	display:none;
+}
 #headline img{
 	margin-top:10px;
 	border:none;
@@ -49,9 +138,6 @@ a img {
 	border: 0;
 }
 
-p{
-	margin: 0 0 1em;
-}
 #header{
 	height:25px;
 	background-color:rgb(176,176,176);
@@ -93,7 +179,7 @@ p{
 #listMenu {
 	float:left;
 	position:absolute;
-	z-index:999;
+	z-index:20;
 }
 #rightPart{
 	float:right;
