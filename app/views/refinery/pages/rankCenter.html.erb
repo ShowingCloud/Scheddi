@@ -1,172 +1,229 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<style type="text/css">
+		</style>
+	</head>
 	<body>
-		<div id="topDiv">
-		<h1>排名中心</h1>
-		</div>
-		<div class="containerDiv">
+	<div class="center">
+<div style="float:left;width:200px;margin-left:40px;margin-top:17px;">
+<img src="/assets/headline.png" style="width:200px"/></div>
+<div class="header">
+     <h1 id="rankCenterH1">排名中心</h1>
+     <input type="text" style="width:440px;height:30px;font-size:17px"/>
+     <input type="button"value="搜索网站" style="font-family:黑体;font-size:15px;height:30px"/>
+</div>
+<div class="containerDiv">
 		<div class="leftDiv">
+		<p id="contents">所有网站分类</p>
 			<ul id='menuList'>
 				<li>
-					综合排名
+				<span style="color:red;">A．</span>休闲娱乐
 				</li>
 				<li>
-					<a href="#">A．休闲娱乐</a>
+				<span style="color:red;">B．</span>网上商城
 				</li>
 				<li>
-					<a href="#">B．网上商城</a>
+				<span style="color:red;">C．</span>生活服务
 				</li>
 				<li>
-					<a href="#">C．生活服务</a>
+				<span style="color:red;">D．</span>教育就业
 				</li>
 				<li>
-					<a href="#">D．教育就业</a>
+				<span style="color:red;">E．</span>商业经济
 				</li>
 				<li>
-					<a href="#">E．商业经济</a>
+				<span style="color:red;">F．</span>艺术人文
 				</li>
 				<li>
-					<a href="#">F．艺术人文</a>
+				<span style="color:red;">G．</span>自然科学
 				</li>
 				<li>
-					<a href="#">G．自然科学</a>
+				<span style="color:red;">H．</span>科技创新
 				</li>
 				<li>
-					<a href="#">H．科技创新</a>
+				<span style="color:red;">I．</span>行政服务
 				</li>
 				<li>
-					<a href="#">I．行政服务</a>
+				<span style="color:red;">J．</span>地方区域
 				</li>
 				<li>
-					<a href="#">J．地方区域</a>
+				<span style="color:red;">K．</span>名人网站
 				</li>
 				<li>
-					<a href="#">K．名人网站</a>
+				<span style="color:red;">L．</span>国外名站
 				</li>
 				<li>
-					<a href="#">L．国外名站</a>
+				<span style="color:red;">M．</span>新闻媒体
 				</li>
 				<li>
-					<a href="#">M．新闻媒体</a>
+				<span style="color:red;">N．</span>电脑网络
 				</li>
 				<li>
-					<a href="#">N．电脑网络</a>
-				</li>
-				<li>
-					<a href="#">O．综合其他</a>
+				<span style="color:red;">O．</span>综合其他
 				</li>
 			</ul>
 		</div>
+		
+		
+		
 		<div class="rightDiv">
+		<div id="Back">
+		<ul id="list">
+		<li style="display:inline;float:left;margin-left:30px;"><label style="cursor:pointer;">综合排名</label></li>
+		<li style="display:inline;float:right;margin-right:100px;"><label style="cursor:pointer;">返回首页</label></li>
+		</ul>
+		<p style="background-color:black;width:860px;height:6px;float:left;margin-top:3px;"></p>
+		</div>
 			<div id="centerRelativeDiv">
-			<div id="sitesRank">
-				<h3>排名网站</h3>
-				<ul>
-					<li>百度</li>
-					<li>谷歌</li>
-					<li>新浪</li>
-					<li>腾讯</li>
-					<li>搜狐</li>
-					<li>网易</li>
-					<li>天猫</li>
-					<li>京东</li>
-				</ul>
-			</div>
 			
 			<table id="titleTable">
 				<tr>
-					<td id="colTitle1">Top100</td>
-					<td id="colTitle2">Alexa</td>
-					<td id="colTitle3">PR值</td>
-					<td id="colTitle4">权重</td>
+				    <th style="width:5%"></th>
+					<th style="width:15%">网站名称</th>
+					<th style="width:50%">网址</th>
+					<th style="width:20%">点击量</th>
+					<th style="width:10%">收藏</th>
 				</tr>
 			</table>
+			<p style="background-color:#CCC;width:760px;height:2px;float:left;margin-top:3px;"></p>
+			
 			<table id="sitesSortTable">
 				<tr>
-					<td id="sitesCol1">1.</td>
-					<td id="sitesCol2">百度</td>
-					<td id="sitesCol3"><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td id="sitesCol4">流量xx</td>
-					<td id="sitesCol5">PRxx</td>
-					<td id="sitesCol6">xxx</td>
+					<td style="width:5%">1.</td>
+					<td style="width:15%">百度</td>
+					<td style="width:50%"><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="width:20%;color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>2.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>3.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>4.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>5.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>6.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>7.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>8.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>9.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 				<tr>
 					<td>10.</td>
 					<td>百度</td>
 					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
-					<td>流量xx</td>
-					<td>PRxx</td>
-					<td>xxx</td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
+				</tr>
+					<tr>
+					<td>11.</td>
+					<td>百度</td>
+					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
+				</tr>
+					<tr>
+					<td>12.</td>
+					<td>百度</td>
+					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
+				</tr>
+					<tr>
+					<td>13.</td>
+					<td>百度</td>
+					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
+				</tr>
+					<tr>
+					<td>14.</td>
+					<td>百度</td>
+					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
+				</tr>
+					<tr>
+					<td>15.</td>
+					<td>百度</td>
+					<td><a href="http://www.baidu.com">www.baidu.com</a></td>
+					<td style="color:red;">2983</td>
+					<td><img src="/assets/add.jpg"></td>
 				</tr>
 			</table>
+			<div id="page">
+			    <a href="">上一页</a>
+			    <a href="">下一页</a>
 		
 		</div>
 		</div>
-		<div class="clear"></div>	
+		            </div>
+                 <div id="sitesRank">
+				<ul>
+				    <li style="display:inline;">排名类网站：</li>
+					<li style="display:inline;"><a href="">Alexa</a></li>
+					<li style="display:inline;"><a href="">站长之家</a></li>
+					<li style="display:inline;"><a href="">中国网站排名</a></li>
+				</ul>
+			</div>	
+	  <p style="background-color:#CCC;width:1080px;height:2px;float:left;margin-top:3px;"></p>
+	  </div>
+	  
+        <div id="footer">
+			<ul>
+				<li><a href="#">关于我们</a></li>
+				<li><a href="#">帮助中心</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">网站合作</a></li>
+				<li><a href="#">版权说明</a></li>
+			</ul>
+			<p><a href="cj.wgq.me">@2014sheren.me</a>版权所有</p>
+        </div>  
+  
 	</div>
-	</body>
+</body>
 </html>
