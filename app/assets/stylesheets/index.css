@@ -194,6 +194,7 @@ a img {
 	display:inline-block;
 	float:left;
 	padding-right:33px;
+	padding-bottom:8px;
 	color:balck;
 	font-size:160%;
 }
@@ -242,8 +243,14 @@ a img {
 	margin-top:-9px;
 }
 #myFavourite{
+	z-index:10;
+	position:absolute;
 	display:none;	
-	margin-left:105px;
+	margin-left:40px;
+	margin-top:-582px;
+	background-color:#F3F3F3;
+	height:600px;
+	width:800px;
 }
  
 #sitesPreview{
@@ -334,35 +341,6 @@ a img {
 	height:25px;
 	width:400px;
 }
-#operateTable{
-	margin-top:10px;
-	margin-bottom:4px;
-	float:left;
-	//margin-left:212px;
-	height:30px;
-	width:500px;
-}
-#operateTable td{
-	height:23px;
-	width:150px;
-	border:solid 1px;
-	text-align:center;
-}
-#favourTable{
-//	margin-left:100px;
-	clear:both;
-	border-spacing:0px;
-}
-.headCol{
-	border-top:1px solid ;
-	border-right:1px solid;
-	border-left:1px solid;
-	text-align:center;
-	font-weight:bold;
-	font-size:20px;
-	height:120px;
-	width:120px;
-}
 #menu ul{
 	display:none;
 	z-index:10;
@@ -405,20 +383,6 @@ a img {
 .secondMenu {
 	background:#F1F1F1;
 	border:1px solid;
-}
-.siteCatalog ul{
-	margin-top:-5px;
-}
-.siteCatalog
-{
-	border-top:1px solid ;
-	border-right:1px solid;
-	text-align:center;
-	height:120px;
-	width:500px;
-}
-#lastRow td{
-	border-bottom:1px solid;
 }
 .siteCatalog li{
 	margin-top:5px;
