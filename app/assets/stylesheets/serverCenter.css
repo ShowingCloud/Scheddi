@@ -3,15 +3,14 @@
 }
 
 body{background-color:#EEEEEE}
-.center{margin-top:-10px;margin-left:auto;margin-right:auto;background-color:white;width:1080px;}
+.center{margin-left:auto;margin-right:auto;background-color:white;width:1080px;}
 .header{margin-left:270px;line-height:60%;}
 .containerDiv{margin:0 auto;text-align:center}
-.leftDiv{margin-top:-17px;float:left;width:200px;position:absolute;text-align:center;}
+.leftDiv{margin-top:-19px;float:left;width:200px;position:absolute;text-align:center;}
 .rightDiv{width:1080px;}
-.footer{clear:both;position:relative;padding:10px;}
-#rankCenterH1{text-align:left;margin-left:110px;font-weight:500;font-size:59px;color:#666666;}
+#rankCenterH1{margin:12px 0 0 170px;font-size:60px;color:#606060;float:left;}
 #contents{background-color:black;color:white;width:170px;height:40px;line-height:37px;font-weight:bold;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:19px;margin-left:30px;margin-top:11px;margin-bottom:0px;}
-#menuList{height:600px;font-family:Verdana,Arial,Helvetica,sans-serif;padding:0;margin:0px 0px 0px 30px;background-color:#EEEEEE;list-style:none;line-height:2em;font-size:19px;font-weight:bold;line-height:2.1em;}
+#menuList{height:700px;font-family:Verdana,Arial,Helvetica,sans-serif;padding:0;margin:0px 0px 0px 30px;background-color:#EEEEEE;list-style:none;line-height:2em;font-size:19px;font-weight:bold;line-height:2.1em;}
 #Back{solid black;margin-left:199px;height:40px;margin-top:10px;}
 #list{list-style:none;}
 #list li{font-weight:bold;font-size:19px;font-family:Verdana,Arial,Helvetica,sans-serif;}
@@ -20,12 +19,8 @@ body{background-color:#EEEEEE}
 #sitesSortTable{width:760px;text-align:center;font-family:Verdana,Arial,Helvetica,sans-serif;font-size:18px;font-weight:600;}
 #sitesSortTable tr td a{text-decoration:none;color:#888;}
 #sitesRank{margin-top:50px;text-align:left;font-size:16px;}
-#sitesRank ul{text-align:center;font-weight:600;list-style:none;}
+#sitesRank ul{text-align:center;font-weight:600;list-style:none;margin:0;}
 #sitesRank a{padding-left:40px;text-decoration:none;color:#0066FF;}
-#footer a{padding-left:10px;text-decoration:none;font-size:small;color:black;}
-#footer li{display:inline;}
-#footer ul{text-align:center;list-style:none;}
-#footer p{text-align:center;font-size:small;}
 h1{text-align:center;}
 #topDiv{
 	margin-left:auto;
@@ -74,9 +69,9 @@ a{
 #menuList  li{
 	display:block;
 	text-align:center;
-	padding-top:8px;
+	padding-top:10px;
 	font-weight:bold;
-	height:23px;
+	height:30px;
 	list-style:none;
 }
 #centerRelativeDiv hr{
