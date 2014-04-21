@@ -14,7 +14,50 @@ body {
 	position:absolute;
 	display:none;
 	}
-	
+#registerDiv{
+	z-index:102;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-200px;
+	margin-left:-180px;
+	display:none;
+	text-align:center;
+	height:400px;
+	width:360px;
+	background-color:#F3F3F3;
+	}
+#registerHeadDiv{
+	height:80px;
+	width:360px;
+}
+.regTableInput{
+	height:30px;
+	width:220px;
+}
+.regTableLbl{
+	text-align:center;
+	width:80px;
+	font-size:120%;
+	font-weight:800;
+	color:6c6c6c;
+}
+#registerDiv table{
+	margin-bottom:20px;
+}
+#registerDiv table td{
+	height:32px;
+}
+#registerBtn{
+	height:36px;
+	width:100px;
+	cursor:pointer;
+	background-color:#70A015;
+	color:#FFFFFF;
+	border:0;
+	padding:0;
+	border-radius:5px;
+}
 #loginDiv{
 		z-index:101;
 		position:absolute;
@@ -115,6 +158,34 @@ body {
 	background-image:url(/assets/search.png);
 	float:right;
 	outline:none;
+}
+#addNewSitesBtn{
+	height:30px;
+	width:30px;
+	background-image:url(/assets/add.png);
+	background-size: 30px 30px;
+	background-position:center;
+	background-color:#F3F3F3;
+	border:0;
+	padding:0;
+	cursor:pointer;
+	display:block;
+	float:left;
+	}
+#addNewSitesLbl{
+	font-size: 120%;
+	display: block;
+	float: right;
+	margin-top: 5PX;
+	cursor:pointer;
+}
+
+#myFavourite ul {
+	padding:0;
+}
+#myFavourite ul li{
+	list-style:none;
+	font-size:120%;
 }
 #seachTxt{
 	padding:0;

@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html>
 	<body>
-			<div id="disableDiv">
-			</div>
-			<div id="loginDiv">
-			<form action="" method="post" >
+		<div id="disableDiv">
+		</div>
+		<div id="loginDiv">
 			<div id="loginBox">
 			<div id="loginHeadDiv">
 				<label style="font-size:150%;float:left;color:6c6c6c;margin:7px 0 0 8px;">登录我的舍人</label>
 				<input type="button" id="closeLoginBtn"></input>
 			</div>
-	        <div id="loginBoxCenter">
-	            <p><input type="text" id="username" name="username" autofocus="autofocus" required="required" autocomplete="off" placeholder="手机/邮箱/用户名" value="" /></p>
-	            
-	            <p><input type="password" id="password" name="password" required="required" placeholder="密码" value="" /></p>
+			<div id="loginBoxCenter">
+				<p><input type="text" id="username" name="username" autofocus="autofocus" required="required" autocomplete="off" placeholder="手机/邮箱/用户名" value="" /></p>
+		
+				<p><input type="password" id="password" name="password" required="required" placeholder="密码" value="" /></p>
 				<p>
 					<input id="remember" type="checkbox" name="remember" />
 					<label for="remember" id="remberLabel">下次自动登陆</label>
 					<a id="forgetLink" href="#">忘记密码?</a>
 				</p>
 			</div>
-	        <div id="loginBoxButtons">
-	            <p><button id="loginBtn">登录</button></p>
+			<div id="loginBoxButtons">
+				<p><button id="loginBtn">登录</button></p>
 				<p><label id="registerLabel">立即注册</label></p>
-	        </div>
-	    </div>
-	    </form>
-	</div>
-			<div id="registerDiv">
 			</div>
+		</div>
+		
+	</div>
+	<div id="registerDiv">
+			<div id="registerHeadDiv">
+				<p style="font-size:50px;color:#6c6c6c;margin-top:20px;padding:0 110px 0 0;">注册舍人</p>
+			</div>
+	        <div id="registerCenter">
+				<table cellSpacing=0 cellPadding=0 style="margin-left:20px;">
+				<tr>
+					<td class="regTableLbl"><label for="emailReg">邮&nbsp;&nbsp;箱</label></td>
+					<td><input class="regTableInput" type="email" id="emailReg" name="emailReg" autofocus="autofocus" required="required" autocomplete="off" placeholder="邮箱" value="" /></td>
+				</tr>
+				</table>
+				<table cellSpacing=0 cellPadding=0 style="margin-left:20px;">
+	            <tr>
+					<td class="regTableLbl"><label for="usernameReg">用户名</label></td>
+					<td><input class="regTableInput" type="text" id="usernameReg" name="usernameReg" required="required" autocomplete="off" placeholder="用户名" value="" /></td>
+				</tr>
+				</table>
+				<table cellSpacing=0 cellPadding=0 style="margin-left:20px;">
+				<tr>
+					<td class="regTableLbl"><label for="passwordReg">密&nbsp;&nbsp;码</label></td>
+					<td><input class="regTableInput" type="password" id="passwordReg" name="passwordReg" required="required" placeholder="密码" value="" /></td>
+				</tr>
+				</table>
+				<table cellSpacing=0 cellPadding=0 style="margin-left:20px;">
+					<tr>
+						<td class="regTableLbl"><label for="verificationCode">验证码</label></td>
+						<td><input type="text" id="verificationCode" name="verificationCode" style="height:30px;width:70px;"></td>
+						<td><img id="verificationImg" src="/assets/verification.png"></td>
+						<td><label id="changeCodeLbl" style="color:#515E92">换一换</label></td>
+					</tr>
+				</table>
+			</div>
+	        <div id="registerButtons">
+	            <button id="registerBtn">注册</button>
+				<label id="toLoginLbl" style="color:#515E92">登录</label>
+	        </div>
+	</div>
 		<div id="mainDiv">
 			<div id="headline"><img src="assets/headline.png"></img></div>
 			<div id="seachDiv">
@@ -421,9 +455,9 @@
 				</div>
 				<div id="myFavourChildDiv4" style="float:left;height:560px;width:199px;margin-top:20px;border-left:solid black 1px;">
 					<ul></ul>
-					<div id="addSitesImgDiv" style="position:fixed;height:30px;width:60px;">
-					<img src="/assets/add.png" style="height:30px;width:30px;"><span>添加</span>
-				</div>
+					<div id="addSitesImgDiv" style="position:fixed;height:30px;width:65px;">
+					<input type="button" id="addNewSitesBtn" name="addNewSitesBtn"><label id="addNewSitesLbl" for="addNewSitesBtn">添加</label>
+					</div>
 				</div>
 				
 			</div>

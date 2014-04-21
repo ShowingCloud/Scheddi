@@ -39,9 +39,17 @@ $(document).ready(function(){
 		$("#disableDiv").css("display","block");
 		$("#loginDiv").css("display","block");
 	});
+	$("#register").click(function(){
+		$("#disableDiv").css("display","block");
+		$("#registerDiv").css("display","block");
+	});
 	$("#closeLoginBtn").click(function(){
 		$("#disableDiv").css("display","none");
 		$("#loginDiv").css("display","none");
+	});
+	$("#toLoginLbl").click(function(){
+		$("#loginDiv").css("display","block");
+		$("#registerDiv").css("display","none");
 	});
 	$("#navigatList li:first-child").mouseover(function(){
 		$("#myFavourite").show();
