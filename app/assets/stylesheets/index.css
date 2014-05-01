@@ -398,10 +398,9 @@ a img {
 
 #footer li {
 	display: inline;
-	border: 1px solid #000;
 	font-weight: bold;
 	margin-right: 30px;
-	font-size:120%;
+	font-size:105%;
 }
 
 #footer p a {
