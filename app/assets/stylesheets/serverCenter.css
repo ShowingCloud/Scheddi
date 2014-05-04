@@ -22,6 +22,11 @@ body{background-color:#EEEEEE}
 #sitesRank ul{text-align:center;font-weight:600;list-style:none;margin:0;margin-bottom:20px;}
 #sitesRank a{padding-left:40px;text-decoration:none;color:#0066FF;}
 h1{text-align:center;}
+.secondMenu1 li {
+	padding: 5px 0 0 0;
+	height: 23px;
+	width: 170px;
+}
 #topDiv{
 	margin-left:auto;
 	margin-right:auto;
