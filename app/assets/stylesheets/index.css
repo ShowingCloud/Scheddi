@@ -13,6 +13,7 @@ body {
 	opacity:0.3;
 	position:absolute;
 	display:none;
+	top:0;
 	}
 #registerDiv{
 	z-index:102;
@@ -27,6 +28,52 @@ body {
 	width:360px;
 	background-color:#F3F3F3;
 	}
+#addSitesHeadDiv{
+	height:30px;
+	width:400px;
+	background-color:#F6F6F6;
+}
+#closeAddSiteBtn{
+	background-color:#F0F0F0;
+	float:right;
+	border:0px;
+	background-image:url(close.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:25px;
+	width:25px;
+	cursor:pointer;
+	margin:3px 8px 0 0;
+	padding:0;
+}
+#addSitesDiv{
+	width:400px;
+	height:200px;
+	background-color:#FFFFFF;
+	margin-top:-100px;
+	margin-left:-200px;
+	z-index:50;
+	position:absolute;
+	top:50%;
+	left:50%;
+}
+#inputSiteName{
+	width:100px;
+}
+#inputSiteAddr{
+	width:195px;
+}
+#selectClassify{
+	width:102px;
+}
+#btnAddOk{
+	background-color:#68B4F0;
+	color:white;
+	border: 0px;
+	padding: 0;
+	height:22px;
+	width:45px;
+}
 #registerHeadDiv{
 	height:80px;
 	width:360px;

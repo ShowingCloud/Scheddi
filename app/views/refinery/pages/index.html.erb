@@ -444,6 +444,26 @@
 				</div>
 			</div>
 			<div id="myFavourite">
+				<div id="addSitesDiv" style="display:none;">
+					<div id="addSitesHeadDiv">
+						<label style="font-size:120%;float:left;color:6c6c6c;margin:5px 0 0 8px;">添加网址</label>
+						<input type="button" id="closeAddSiteBtn"/>
+					</div>
+					<p>
+						<label>名称:</label>
+						<input id="inputSiteName" type="text" placeholder="请输入网站名称"/>
+						<label>网址:</label>
+						<input type="text" id="inputSiteAddr" placeholder="请输入网址"/>
+					</p>
+					<p style="text-align:left;">
+						<label style="margin-left:10px;">分类:</label>
+						<select id="selectClassify">
+							<option>请选择分类</option>
+						</select>
+						<label>+添加分类</label>
+					</p>
+					<p><input type="button" id="btnAddOk" value="确定"/><input type="button" id="btnCancelAdd" value="取消"/></p>
+				</div>
 				<div id="myFavourChildDiv1" style="float:left;height:560px;width:199px;margin-top:10px;">
 					<ul>
 						<li>网站名称</li>
@@ -459,7 +479,6 @@
 					<input type="button" id="addNewSitesBtn" name="addNewSitesBtn"><label id="addNewSitesLbl" for="addNewSitesBtn">添加</label>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 		</div>

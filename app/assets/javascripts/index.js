@@ -43,6 +43,12 @@ $(document).ready(function(){
 		$("#disableDiv").css("display","block");
 		$("#registerDiv").css("display","block");
 	});
+	$('#addNewSitesBtn').click(function(){
+		$("#addSitesDiv").css("display","block");
+	});
+	$('#closeAddSiteBtn').click(function(){
+		$("#addSitesDiv").css("display","none");
+	});
 	$("#closeLoginBtn").click(function(){
 		$("#disableDiv").css("display","none");
 		$("#loginDiv").css("display","none");
