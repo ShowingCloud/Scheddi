@@ -1,0 +1,46 @@
+<%= form_for [refinery, :scheddi_recommendations_admin, @scheddi_recommendation] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @scheddi_recommendation,
+              :include_object_name => true %>
+
+[#<Rails::Generators::GeneratedAttribute:0xbcc6874 @name="name", @type=:string, @has_index=false, @has_uniq_index=false, @attr_options={}, @field_type=:text_field>, #<Rails::Generators::GeneratedAttribute:0xbcc66bc @name="category", @type=:integer, @has_index=false, @has_uniq_index=false, @attr_options={}, @field_type=:number_field>, #<Rails::Generators::GeneratedAttribute:0xbcc64b4 @name="description", @type=:text, @has_index=false, @has_uniq_index=false, @attr_options={}, @field_type=:text_area>, #<Rails::Generators::GeneratedAttribute:0xbcc61d0 @name="data_id", @type="integer", @has_index=false, @has_uniq_index=false, @attr_options={}, @field_type=:text_field>, #<Rails::Generators::GeneratedAttribute:0xbcc5fc8 @name="picture_id", @type="integer", @has_index=false, @has_uniq_index=false, @attr_options={}, @field_type=:text_field>]
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :category -%>
+    <%= f.number_field :category -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:description],
+                :object => "scheddi_recommendations/scheddi_recommendation" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :data_id -%>
+    <%= f.text_field :data_id -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :picture_id -%>
+    <%= f.text_field :picture_id -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.scheddi_recommendations.admin.scheddi_recommendations.scheddi_recommendation'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @scheddi_recommendation.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

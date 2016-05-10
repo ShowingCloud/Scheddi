@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+#        article: masculino/femenino
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Crear nuevo scheddi recommendation
+            reorder: Reordenar scheddi recommendations
+            reorder_done: Reordenación de scheddi recommendations completada
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay scheddi recommendations todavía. Pulsa en "Crear nuevo Scheddi Recommendation" para crear tu primer scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: Ver este scheddi recommendation como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este scheddi recommendation
+            delete: Borrar este scheddi recommendation para siempre
+      scheddi_recommendations:
+        show:
+          other: Otros scheddi recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="scheddi_recommendations">
+    <% @scheddi_recommendations.each do |scheddi_recommendation| %>
+      <li>
+        <%= link_to scheddi_recommendation.name, refinery.scheddi_recommendations_scheddi_recommendation_path(scheddi_recommendation) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

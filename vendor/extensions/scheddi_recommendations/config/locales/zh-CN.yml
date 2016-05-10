@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: 建立新的 Scheddi Recommendation
+            reorder: 对 Scheddi Recommendations 重新排序
+            reorder_done: 对 Scheddi Recommendations 的重新排序结束
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Scheddi Recommendations yet. Click "Add New Scheddi Recommendation" to add your first scheddi recommendation.
+            no_items_yet: 目前没有 Scheddi Recommendations . 点击 "Add New Scheddi Recommendation" 创建一个scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: 查看 scheddi recommendation 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 scheddi recommendation
+            delete: 永久删除 scheddi recommendation
+      scheddi_recommendations:
+        show:
+          other: 其他 Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

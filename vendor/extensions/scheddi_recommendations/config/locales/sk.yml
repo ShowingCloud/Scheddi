@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Pridať Scheddi Recommendation
+            reorder: Preusporiadať Scheddi Recommendations
+            reorder_done: Koniec radenia Scheddi Recommendations
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Scheddi Recommendations. Kliknite na "Pridať Scheddi Recommendation" pre pridanie prvého scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: Zobraziť náhľad scheddi recommendation<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť scheddi recommendation
+            delete: Zmazať scheddi recommendation
+      scheddi_recommendations:
+        show:
+          other: Daľšie Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

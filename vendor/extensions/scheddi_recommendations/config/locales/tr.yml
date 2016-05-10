@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Yeni Ekle Scheddi Recommendation
+            reorder: Tekrar sirala Scheddi Recommendations
+            reorder_done: Tekrar siralama tamamlandiScheddi Recommendations
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Scheddi Recommendations yok henuz.  Tikla "Yeni Ekle Scheddi Recommendation" eklemek senin ilk scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: Bunu canlu scheddi recommendation goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle scheddi recommendation
+            delete: Bunu Sil scheddi recommendation sonsuza dek
+      scheddi_recommendations:
+        show:
+          other: Diger Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

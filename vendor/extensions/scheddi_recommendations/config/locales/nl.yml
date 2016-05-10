@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Nieuwe Scheddi Recommendation toevoegen
+            reorder: De volgorde van de Scheddi Recommendations wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Scheddi Recommendation-volgorde
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Scheddi Recommendations. Druk op 'Nieuwe Scheddi Recommendation toevoegen' om de eerste toe te voegen.
+          scheddi_recommendation:
+            view_live_html: Deze scheddi recommendation op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze scheddi recommendation
+            delete: Deze scheddi recommendation definitief verwijderen
+      scheddi_recommendations:
+        show:
+          other: Andere Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

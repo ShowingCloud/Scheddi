@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Scheddi Recommendation
+            reorder: Réordonner les Scheddi Recommendations
+            reorder_done: Fin de réordonnancement des Scheddi Recommendations
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Scheddi Recommendation. Cliquer sur "Créer un(e) nouve(au/l/lle) Scheddi Recommendation" pour créer votre premi(er/ère) scheddi recommendation.'
+          scheddi_recommendation:
+            view_live_html: Voir ce(t/tte) scheddi recommendation <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) scheddi recommendation
+            delete: Supprimer définitivement ce(t/tte) scheddi recommendation
+      scheddi_recommendations:
+        show:
+          other: Autres Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

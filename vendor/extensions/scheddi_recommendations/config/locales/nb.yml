@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Lag en ny Scheddi Recommendation
+            reorder: Endre rekkefølgen på Scheddi Recommendations
+            reorder_done: Ferdig å endre rekkefølgen Scheddi Recommendations
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Scheddi Recommendations enda. Klikk på "Lag en ny Scheddi Recommendation" for å legge til din første scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: Vis hvordan denne scheddi recommendation ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne scheddi recommendation
+            delete: Fjern denne scheddi recommendation permanent
+      scheddi_recommendations:
+        show:
+          other: Andre Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

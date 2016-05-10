@@ -1,0 +1,20 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(scheddi_recommendation) -%>">
+  <span class='title'>
+    <%= scheddi_recommendation.name %>
+
+  </span>
+  <span class='actions'>
+    
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.scheddi_recommendations_scheddi_recommendation_path(scheddi_recommendation),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_scheddi_recommendations_admin_scheddi_recommendation_path(scheddi_recommendation),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.scheddi_recommendations_admin_scheddi_recommendation_path(scheddi_recommendation),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => scheddi_recommendation.name),
+        :method => :delete %>
+  </span>
+</li>

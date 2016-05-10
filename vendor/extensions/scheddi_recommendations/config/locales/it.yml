@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      scheddi_recommendations:
+        title: Scheddi Recommendations
+    scheddi_recommendations:
+      admin:
+        scheddi_recommendations:
+          actions:
+            create_new: Aggiungi Nuovo Scheddi Recommendation
+            reorder: Riordina Scheddi Recommendations
+            reorder_done: Termina il Riordino di Scheddi Recommendations
+          records:
+            title: Scheddi Recommendations
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Scheddi Recommendations. Clicca "Aggiungi Nuovo Scheddi Recommendation" per aggiungere il tuo primo scheddi recommendation.
+          scheddi_recommendation:
+            view_live_html: Guarda live questo scheddi recommendation <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo scheddi recommendation
+            delete: Rimuovi per sempre questo scheddi recommendation
+      scheddi_recommendations:
+        show:
+          other: Altri Scheddi Recommendations
+  activerecord:
+    attributes:
+      'refinery/scheddi_recommendations/scheddi_recommendation':
+        name: Name
+        category: Category
+        description: Description
+        data_id: Data
+        picture_id: Picture

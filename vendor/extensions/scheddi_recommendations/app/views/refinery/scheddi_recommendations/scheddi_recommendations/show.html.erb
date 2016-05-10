@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @scheddi_recommendation.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @scheddi_recommendation.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Category</h1>
+    <p>
+      <%=raw @scheddi_recommendation.category %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @scheddi_recommendation.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Data</h1>
+    <p>
+      <%=raw @scheddi_recommendation.data_id %>
+    </p>
+  </section>
+  <section>
+    <h1>Picture</h1>
+    <p>
+      <%=raw @scheddi_recommendation.picture_id %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="scheddi_recommendations">
+      <% @scheddi_recommendations.each do |scheddi_recommendation| %>
+        <li>
+          <%= link_to scheddi_recommendation.name, refinery.scheddi_recommendations_scheddi_recommendation_path(scheddi_recommendation) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

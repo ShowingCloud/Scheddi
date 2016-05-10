@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::ScheddiRecommendations::Admin::ScheddiRecommendationsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.scheddi_recommendations_admin_scheddi_recommendations_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_scheddi_recommendations_admin_scheddi_recommendation_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::ScheddiRecommendations::Admin::ScheddiRecommendationsController.sortable? && ::Refinery::ScheddiRecommendations::ScheddiRecommendation.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Scheddi Recommendations"),
+                 refinery.scheddi_recommendations_admin_scheddi_recommendations_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Scheddi Recommendations"),
+                 refinery.scheddi_recommendations_admin_scheddi_recommendations_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
